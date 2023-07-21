@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,7 @@
 		4CBCDEB72701426800E8992C /* StepCountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCDEB62701426800E8992C /* StepCountController.swift */; };
 		4CBCDEBC270142DF00E8992C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCDEBB270142DF00E8992C /* AppState.swift */; };
 		4CBCDEBE270142EE00E8992C /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCDEBD270142EE00E8992C /* AppModel.swift */; };
-		74DA3A462A676FCA0081C5FB /* FitNessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA3A452A676FCA0081C5FB /* FitNessTests.swift */; };
+		74DA3A632A687F4C0081C5FB /* AppModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA3A622A687F4C0081C5FB /* AppModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 		4CBCDEBB270142DF00E8992C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		4CBCDEBD270142EE00E8992C /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		74DA3A432A676FCA0081C5FB /* FitNessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitNessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		74DA3A452A676FCA0081C5FB /* FitNessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitNessTests.swift; sourceTree = "<group>"; };
+		74DA3A622A687F4C0081C5FB /* AppModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,7 @@
 		74DA3A442A676FCA0081C5FB /* FitNessTests */ = {
 			isa = PBXGroup;
 			children = (
-				74DA3A452A676FCA0081C5FB /* FitNessTests.swift */,
+				74DA3A622A687F4C0081C5FB /* AppModelTests.swift */,
 			);
 			path = FitNessTests;
 			sourceTree = "<group>";
@@ -188,8 +188,9 @@
 		185CB1F023C78CE6009F7571 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = "Ray Wenderlich";
 				TargetAttributes = {
 					185CB1F723C78CE6009F7571 = {
@@ -197,6 +198,7 @@
 					};
 					74DA3A422A676FCA0081C5FB = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 						TestTargetID = 185CB1F723C78CE6009F7571;
 					};
 				};
@@ -280,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DA3A462A676FCA0081C5FB /* FitNessTests.swift in Sources */,
+				74DA3A632A687F4C0081C5FB /* AppModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +466,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4A45YWS7LC;
@@ -477,6 +480,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitNess.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FitNess";
@@ -489,6 +493,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4A45YWS7LC;
