@@ -17,6 +17,7 @@
 		4CBCDEB72701426800E8992C /* StepCountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCDEB62701426800E8992C /* StepCountController.swift */; };
 		4CBCDEBC270142DF00E8992C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCDEBB270142DF00E8992C /* AppState.swift */; };
 		4CBCDEBE270142EE00E8992C /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCDEBD270142EE00E8992C /* AppModel.swift */; };
+		74B39C522A6B05A700B7D28E /* StepCountControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B39C512A6B05A700B7D28E /* StepCountControllerTests.swift */; };
 		74DA3A632A687F4C0081C5FB /* AppModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA3A622A687F4C0081C5FB /* AppModelTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		4CBCDEB62701426800E8992C /* StepCountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountController.swift; sourceTree = "<group>"; };
 		4CBCDEBB270142DF00E8992C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		4CBCDEBD270142EE00E8992C /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		74B39C512A6B05A700B7D28E /* StepCountControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountControllerTests.swift; sourceTree = "<group>"; };
 		74DA3A432A676FCA0081C5FB /* FitNessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitNessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DA3A622A687F4C0081C5FB /* AppModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				74DA3A622A687F4C0081C5FB /* AppModelTests.swift */,
+				74B39C512A6B05A700B7D28E /* StepCountControllerTests.swift */,
 			);
 			path = FitNessTests;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74DA3A632A687F4C0081C5FB /* AppModelTests.swift in Sources */,
+				74B39C522A6B05A700B7D28E /* StepCountControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

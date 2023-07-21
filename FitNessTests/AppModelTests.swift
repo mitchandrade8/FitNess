@@ -33,25 +33,29 @@
 import XCTest
 import FitNess
 
+var sut: AppModel!
+
 final class AppModelTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
+  
+  override func setUpWithError() throws {
+    try super.setUpWithError()
+    sut = AppModel()
+  }
+  
+  override func tearDownWithError() throws {
+    sut = nil
+    try super.tearDownWithError()
+  }
+  
   func testAppModel_whenInitialized_isInNotStartedState() {
-    let sut = AppModel()
+    //    let sut = AppModel()
     let initialState = sut.appState
     XCTAssertEqual(initialState, AppState.notStarted)
   }
-
+  
   func testAppModel_whenStarted_isInInProgressState() {
     // 1 given app in not started
-    let sut = AppModel()
+    //    let sut = AppModel()
     
     // 2 when started
     sut.start()

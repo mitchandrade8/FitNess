@@ -103,3 +103,4 @@ extension AppState {
     return UIImage(imageLiteralResourceName: imageName)
   }
 }
+
